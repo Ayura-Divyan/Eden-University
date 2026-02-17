@@ -9,14 +9,20 @@
 <body>
     
     <nav>
-        <img src="assets/logo.png" alt="Eden University Logo" class="logo">
-        <ul class="nav_list">
-            <li><a href="#home">Home</a></li>
-            <li><select class="departments_dropdown" name="departments"></select></li>
-            <li><select class="courses_dropdown"></select></li>
-            <li><a href="#admissions">Admissions</a></li>
-            <li><a href="#contact">Contact</a></li>
+        <a href="index.html">
+        <img src="assets/logo.png" alt="Eden University Logo" id="logo">
+        </a>
+        <ul>
+            <li><a href="#" onclick="window.location.href='index.html'">Home</a></li>
+            <li><a href="departments.html" target="_blank">Departments</a></li>
+            <li><a href="admissions.html" target="_blank">Admissions</a></li>
+            <li><a href="courses.html" target="_blank">Courses</a></li>
+            <li><a href="enquiry.html" target="_blank">Enquiry</a></li>
+            <li><button id="nav-about-us">About Us</button></li>
         </ul>
+        <div class="email-info">
+            <a href="mailto:info@eden.edu">info@eden.edu</a>
+        </div>
     </nav>
     
 </body>
