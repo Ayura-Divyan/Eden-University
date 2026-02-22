@@ -26,8 +26,13 @@ nav { /* Styles for the navigation bar */
     color: var(--text-color);
     padding: 10px 20px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .logo {
@@ -47,10 +52,15 @@ nav { /* Styles for the navigation bar */
 
 .nav-links {
     list-style-type: none;
+    display: flex;
+    gap: 160px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 
-.nav-links li a {
+.nav-links a, .email-info a {
     text-decoration: none;
 }
 
