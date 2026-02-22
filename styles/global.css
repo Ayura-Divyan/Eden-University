@@ -1,0 +1,45 @@
+/* This file will mainly contain global styles fo things such as the navigation bar, 
+footer, and any other elements that are used across multiple pages of the website. */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+:root { /* This is where we define our CSS variables for consistent theming across the website */
+    --bg-color: #f6efd2;
+    --primary-teal: #5ab5a6;
+    --accent-orange: #de6631;
+    --text-color: black;
+    --white: white;
+    --font-headings-playfair: 'Playfair Display', serif;
+    --font-headings-cinzel: 'Cinzel', serif;
+    --font-body: 'Source Sans 3', sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: var(--font-body);
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    background-color: var(--primary-teal);
+    color: var(--text-color);
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+}
+
+.university-name {
+    font-family: var(--font-headings-cinzel);
+    font-size: 1.5em;
+    color: var(--text-color);
+    font-weight: 490;
+}
+
+
