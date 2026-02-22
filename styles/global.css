@@ -20,7 +20,7 @@ body {
     padding: 0;
 }
 
-nav {
+nav { /* Styles for the navigation bar */
     display: flex;
     background-color: var(--primary-teal);
     color: var(--text-color);
@@ -40,6 +40,17 @@ nav {
     font-size: 1.5em;
     color: var(--text-color);
     font-weight: 490;
+    align-items: flex-start;
 }
 
+
+
+.nav-links {
+    list-style-type: none;
+}
+
+
+.nav-links li a {
+    text-decoration: none;
+}
 
