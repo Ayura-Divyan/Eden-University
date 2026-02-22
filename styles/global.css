@@ -59,8 +59,18 @@ nav { /* Styles for the navigation bar */
     padding: 0;
 }
 
+.email-info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
 
+.email-info img {
+    width: 20px;
+    height: 20px;
+}
 .nav-links a, .email-info a {
     text-decoration: none;
+    color: var(--text-color);
 }
 
