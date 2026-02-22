@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" alt ="Eden University Favicon">
+    <title>Eden University - Enquiry</title>
+</head>
+<body>
+    <nav>
+            <a href="index.html">
+            <img src="assets/logo.png" alt="Eden University Logo" class="logo">
+            </a>
+            <p class="university-name">Eden <span class="university-highlight">University</span></p>
+            <ul>
+                <li><a href="#" onclick="window.location.href='index.html'">Home</a></li>
+                <li><a href="departments.html" target="_blank">Departments</a></li>
+                <li><a href="courses.html" target="_blank">Courses</a></li>
+                <li><a href="enquiry.html" target="_blank">Enquiry</a></li>
+                <li><button id="nav-about-us">About Us</button></li>
+            </ul>
+            <div class="email-info">
+                <a href="mailto:info@eden.edu">info@eden.edu</a>
+            </div>
+        </nav>
+
+    <main>
+        <h1>Enquiry Form</h1>
+        <form>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Full Name" required>
+            <br><br>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <br><br>
+            <label for="Department">Department</label>
+            <select id="Department" name="Department" required>
+                <option value="">Select Department</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="WISE">WISE</option>
+                <option value="Business Administration">Business Administration</option>
+            </select>
+            <br><br>
+            <label for="level">Level of Study</label>
+            <input type="radio" id="foundation" name="level" value="Foundation" required>
+            <label for="foundation">Foundation</label>
+            <input type="radio" id="undergraduate" name="level" value="Undergraduate" required>
+            <label for="undergraduate">Undergraduate</label>
+            <input type="radio" id="postgraduate" name="level" value="Postgraduate" required>
+            <label for="postgraduate">Postgraduate</label>
+            <br><br>
+            <label for="intake">Intake</label>
+            <input type="checkbox" id="spring" name="intake" value="Spring">
+            <label for="spring">Spring</label>
+            <input type="checkbox" id="summer" name="intake" value="Summer">
+            <label for="summer">Summer</label>
+            <input type="checkbox" id="fall" name="intake" value="Fall">
+            <label for="fall">Fall</label>
+            <br><br>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your message here..." required></textarea>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+    <footer>
+        <section class="footer-top">
+            <img src="assets/logo.png" alt="Eden University Logo" class="logo">
+            <p class="university-name">Eden <span class="university-highlight">University</span></p>
+        </section>
+        <section class="contact-info">
+            <h3>Contact Us</h3>
+            <p>Email: <a href="mailto:info@eden.edu">info@eden.edu</a></p>
+            <p>Phone: +1 (555) 123-4567</p>
+            <p>Address: 56 Berlint, Ostania</p>
+
+        </section>
+        <section class="footer-bottom">
+            <hr>
+            <p>&copy; 2024 Eden University. All rights reserved.</p>
+            <privacy-policy><a href="privacy.html" target="_blank">Privacy Policy</a></privacy-policy>
+            <accessibility><a href="accessibility.html" target="_blank">Accessibility</a></accessibility>
+        </section>
+    </footer>
+    
+</body>
+</html>
