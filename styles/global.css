@@ -13,7 +13,7 @@ footer, and any other elements that are used across multiple pages of the websit
     --font-body: 'Source Sans 3', sans-serif;
 }
 
-body {
+body { /* Global styles for the body of the website */
     background-color: var(--bg-color);
     font-family: var(--font-body);
     margin: 0;
@@ -29,7 +29,8 @@ nav { /* Styles for the navigation bar */
     justify-content: space-between;
 
 }
-.logo-container {
+
+.logo-container { /* Divides the sections of the nav bar */
     display: flex;
     align-items: center;
     gap: 10px;
@@ -48,8 +49,6 @@ nav { /* Styles for the navigation bar */
     align-items: flex-start;
 }
 
-
-
 .nav-links {
     list-style-type: none;
     display: flex;
@@ -57,6 +56,10 @@ nav { /* Styles for the navigation bar */
     align-items: center;
     margin: 0;
     padding: 0;
+}
+
+.nav-links li a:hover {
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.359);
 }
 
 .email-info {
@@ -72,5 +75,6 @@ nav { /* Styles for the navigation bar */
 .nav-links a, .email-info a {
     text-decoration: none;
     color: var(--text-color);
+    transition: text-shadow 0.3s ease;
 }
 
