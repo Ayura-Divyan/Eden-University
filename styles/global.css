@@ -31,7 +31,7 @@ nav { /* Styles for the navigation bar */
 
 }
 
-.logo-container { /* Divides the sections of the nav bar */
+.logo-container { 
     display: flex;
     align-items: center;
     gap: 10px;
@@ -84,7 +84,7 @@ nav { /* Styles for the navigation bar */
     transition: text-shadow 0.3s ease;
 }
 
-header {
+header { /* Styles for the header section of the website */
     background-image: linear-gradient(to left, rgba(223, 133, 88, 0.721), rgba(223, 133, 88, 0.5));
     color: #1a1a1acb;
     margin: 2px 10px;
@@ -94,6 +94,33 @@ header {
     box-shadow: 3px 5px 4px rgba(0, 0, 0, 0.08);
 }
 
-header p {
+header p { /* Header paragraph line breaks */
     max-width: 600px;
+}
+
+.statistics { /* Styles for the statistics section of the website */
+    display: flex;
+    gap: 50px;
+    margin: 20px 10px;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px 1.5px rgba(0, 0, 0, 0.08);
+    justify-content: space-between;
+    background-color: #f6efd2b8;
+}
+
+.statistics li { /* Styles for the individual statistics items */
+    list-style-type: none;
+    display: flex-start;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    padding: 0 100px;
+}
+
+.statistics li strong { /* Styles for the bolded numbers in the statistics section */
+    font-family: var(--font-headings-cinzel);
+    color: var(--accent-orange);
+    align-items: center;
+    justify-content: center;
 }
