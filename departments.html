@@ -4,21 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/global.css">
     <title>Departments</title>
 </head>
 <body>
     <nav>
-        <a href="index.html">
-        <img src="assets/logo.png" alt="Eden University Logo" class="logo">
-        </a>
-        <p class="university-name">Eden <span class="university-highlight">University</span></p>
-        <ul>
-            <li><a href="#" onclick="window.location.href='index.html'">Home</a></li>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="assets/logo.png" alt="Eden University Logo" class="logo">
+            </a>
+            <p class="university-name">Eden University</p>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
             <li><a href="departments.html" target="_blank">Departments</a></li>
             <li><a href="enquiry.html" target="_blank">Enquiry</a></li>
             <li><button id="nav-about-us">About Us</button></li>
         </ul>
         <div class="email-info">
+            <img src="assets/email.png" alt="Email Icon" class="email-icon">
             <a href="mailto:info@eden.edu">info@eden.edu</a>
         </div>
     </nav>
@@ -78,7 +82,7 @@
         <div class="footer-bottom">
             <hr>
             <p>&copy; 2024 Eden University. All rights reserved.</p>
-            <a href="privacy.html" target="_blank">Privacy Policy</a>
+            <privacy-policy><a href="privacy.html" target="_blank">Privacy Policy</a></privacy-policy>
             <a href="accessibility.html" target="_blank">Accessibility</a>
         </div>
     </footer>
