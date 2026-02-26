@@ -60,7 +60,7 @@ nav { /* Styles for the navigation bar */
 }
 
 .nav-links li a:hover {
-    text-shadow: 0 0 8px rgba(0, 0, 0, 0.359);
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.197);
 }
 
 .email-info a:hover {
@@ -118,3 +118,11 @@ footer {
     padding: 0;
 }
 
+footer a {
+    color: var(--font-body);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.197);
+}
