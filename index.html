@@ -3,28 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" alt ="Eden University Favicon">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <style>
+        #department-cards {
+            scroll-margin-top: 80px;
+        }
+    </style>
     <title>Eden University</title>
 </head>
 <body>
-    <main>
-        <nav>
+    <nav>
+        <div class="logo-container">
             <a href="index.html">
-            <img src="assets/logo.png" alt="Eden University Logo" class="logo">
+                <img src="assets/logo.png" alt="Eden University Logo" class="logo">
             </a>
-            <p class="university-name">Eden <span class="university-highlight">University</span></p>
-            <ul>
-                <li><a href="#" onclick="window.location.href='index.html'">Home</a></li>
-                <li><a href="departments.html" target="_blank">Departments</a></li>
-                <li><a href="enquiry.html" target="_blank">Enquiry</a></li>
-                <li><button id="nav-about-us">About Us</button></li>
-            </ul>
-            <div class="email-info">
-                <a href="mailto:info@eden.edu">info@eden.edu</a>
-            </div>
-        </nav>
-
-        <header>
+            <p class="university-name">Eden University</p>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="departments.html" target="_blank">Departments</a></li>
+            <li><a href="enquiry.html" target="_blank">Enquiry</a></li>
+            <li><a id="nav-about-us" href="#department-cards">About Us</a></li>
+        </ul>
+        <div class="email-info">
+            <img src="assets/email.png" alt="Email Icon" class="email-icon">
+            <a href="mailto:info@eden.edu">info@eden.edu</a>
+        </div>
+    </nav>
+    <main>
+            <header>
             <h1>The Start of an <span id="incredible-journey">Incredible Journey</span></h1>
             <h2>Join us in shaping the future of education</h2>
             <p>At Eden University, we believe that education is more than just a 
@@ -32,17 +40,17 @@
                 ecosystem where curiosity meets innovation, and where students are 
                 encouraged to challenge the status quo in pursuit of knowledge.</p>
         </header>
-        <section id="statistics">
-            <ul>
-                <li><strong>10,000+</strong> Students</li>
-                <li><strong>500+</strong> Faculty Members</li>
-                <li><strong>100+</strong> Programs Offered</li>
-                <li><strong>50+</strong> Research Centers</li>
-            </ul>
-        </section>
+        
+        <ul class="statistics">
+            <li><strong>10,000+</strong><br> Students</li>
+            <li><strong>500+</strong><br> Faculty Members</li>
+            <li><strong>100+</strong><br> Programs Offered</li>
+            <li><strong>50+</strong><br> Research Centers</li>
+        </ul>
+        
         <article id="department-cards">
             <div class="card">
-                <img scr="https://via.placeholder.com/300x200" alt="Computer Science Department">
+                <img src="assets/cs.jpg" alt="Computer Science Department">
                 <div class="card-content">
                     <h3>Computer Science</h3>
                     <p>Explore the world of algorithms, programming, and artificial intelligence with our cutting-edge Computer Science program.</p>
@@ -50,14 +58,15 @@
                 </div>
             </div>
             <div class="card">
-                <img src="https://via.placeholder.com/300x200" alt="WISE Department">
+                <img src="assets/wise.jpg" alt="WISE Department">
                 <div class="card-content">
                     <h3>Division of Intelligence Services (WISE)</h3>
                     <p>Master the art of information gathering, psychological warfare, and maintaining world peace through clandestine operations.</p>
                     <a href="departments.html#wise" target="_blank">View Mission Briefing &rarr;</a>
+                </div>
             </div>
             <div class="card">
-                <img src="https://via.placeholder.com/300x200" alt="Business Department">
+                <img src="assets/fine-arts.jpg" alt="Business Department">
                 <div class="card-content">
                     <h3>Fine Arts</h3>
                     <p>Discover the beauty of creativity, artistic expression, and cultural appreciation with our comprehensive Fine Arts program.</p>
@@ -67,22 +76,24 @@
         </article>
     </main>
     <footer>
-        <section class="footer-top">
-            <img src="assets/logo.png" alt="Eden University Logo" class="logo">
+        <div class="footer-top">
+            <a href="index.html">
+                <img src="assets/logo.png" alt="Eden University Logo" class="logo">
+            </a>
             <p class="university-name">Eden <span class="university-highlight">University</span></p>
-        </section>
-        <section class="contact-info">
-            <h3>Contact Us</h3>
+            
+        </div>
+        <div class="contact-info">
+            <h1>Contact Us</h1>
             <p>Email: <a href="mailto:info@eden.edu">info@eden.edu</a></p>
             <p>Phone: +1 (555) 123-4567</p>
             <p>Address: 56 Berlint, Ostania</p>
-        </section>
-        <section class="footer-bottom">
-            <hr>
+        </div>
+        <div class="footer-bottom">
             <p>&copy; 2024 Eden University. All rights reserved.</p>
             <privacy-policy><a href="privacy.html" target="_blank">Privacy Policy</a></privacy-policy>
-            <accessibility><a href="accessibility.html" target="_blank">Accessibility</a></accessibility>
-        </section>
+            <a href="accessibility.html" target="_blank">Accessibility</a>
+        </div>
     </footer>
 </body>
 </html>

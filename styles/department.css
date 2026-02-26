@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+:root { /* This is where we define our CSS variables for consistent theming across the website */
+    --bg-color: #f6efd2;
+    --primary-teal: #5ab5a6;
+    --accent-orange: #de6631;
+    --text-color: black;
+    --white: white;
+    --font-headings-playfair: 'Playfair Display', serif;
+    --font-headings-cinzel: 'Cinzel', serif;
+    --font-body: 'Source Sans 3', sans-serif;
+}
+
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+article {
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-left: 6px solid var(--primary-teal);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+article h2 {
+    font-family: var(--font-headings-playfair);
+    font-size: 32px;
+    color: var(--accent-orange);
+    margin: 0 0 20px 0;
+    letter-spacing: 1px;
+}
+
+article p {
+    font-size: 18px;
+    line-height: 28px;
+    color: #333333;
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+
+article ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    margin-bottom: 35px;
+}
+
+article ul li {
+    position: relative;
+    padding-left: 28px;
+    font-family: var(--font-body);
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+article ul li::before {
+    content: "◈";
+    position: absolute;
+    left: 0;
+    color: var(--primary-teal);
+    font-size: 14px;
+}
+
+article a {
+    display: inline-block;
+    background-color: var(--primary-teal);
+    color: var(--white);
+    padding: 14px 28px;
+    text-decoration: none;
+    border-radius: 2px;
+    font-family: var(--font-headings-cinzel);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: background-color 0.2s ease, letter-spacing 0.2s ease;
+}
+
+article a:hover {
+    background-color: #4a998c;
+    letter-spacing: 3px;
+}
+
+#wise {
+    border-left-color: var(--accent-orange);
+    background: linear-gradient(150deg, #ffffff, #ffeedd);
+}
