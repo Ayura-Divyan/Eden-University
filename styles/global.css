@@ -13,6 +13,10 @@ footer, and any other elements that are used across multiple pages of the websit
     --font-body: 'Source Sans 3', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body { /* Global styles for the body of the website */
     background-color: var(--bg-color);
     font-family: var(--font-body);
