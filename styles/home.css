@@ -37,8 +37,15 @@ header p { /*Header paragraph line breaks*/
     color: var(--accent-orange);
     align-items: center;
     justify-content: center;
+    border: #1a1a1acb 3px;
 }
 
 #department-cards {
     display: flex;
+}
+
+.card img {
+    width: 480px;
+    height: 200px;
+    object-fit: cover;
 }
