@@ -10,7 +10,7 @@
     --font-body: 'Source Sans 3', sans-serif;
 }
 
-/* Ensure the screen doesn't allow scrolling */
+
 html, body {
     height: 100%;
     margin: 0;
@@ -21,14 +21,13 @@ body {
     flex-direction: column;
 }
 
-/* This is the key: it stretches to fill the space between nav and footer */
 main { 
     display: grid;
-    /* Define two equal columns */
     grid-template-columns: 1fr 1fr; 
     gap: 40px;
     max-width: 1900px;
-    margin: 40px auto;
+    margin: 20px auto;
+    margin-bottom: 40px;
     background-color: #e5764630;
     backdrop-filter: blur(20px);
     padding: 10px;
@@ -40,7 +39,7 @@ main {
 
 .side-image {
     width: 500px;
-    height: 400px;
+    height: 600px;
     object-fit: cover;
     border-radius: 8px;
     object-fit: cover;
@@ -64,6 +63,7 @@ select { /*Styles for text inputs and emails*/
     box-sizing: border-box; 
 }
 
+/*Styles for the department drop down*/
 select#Department option[value=""] {
     color: #757575;
 }
@@ -100,4 +100,68 @@ select#Department option {
     background-color: #e5764630; 
     color: var(--text-color);
     padding: 10px;
+}
+
+/*Styles for the text area*/
+textarea {
+    width: 100%;
+    min-height: 120px;
+    padding: 12px;
+    margin-top: 5px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #4a5568;
+    border-radius: 8px;
+    color: var(--text-color);
+    font-family: var(--font-body);
+    font-size: 16px;
+    box-sizing: border-box;
+    resize: vertical;
+    transition: all 0.3s ease;
+    display: block;
+}
+
+textarea:hover {
+    border-color: #ea83579e;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+textarea:focus {
+    outline: none;
+    border-color: var(--accent-orange);
+    box-shadow: 0 0 0 3px rgba(222, 102, 49, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+textarea::placeholder {
+    color: #757575;
+    opacity: 0.8;
+}
+
+/*Styles for the submit button*/
+input[type="submit"] {
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(135deg, var(--accent-orange), #ef8254b4);
+    color: var(--white);
+    font-family: var(--font-headings-cinzel);
+    font-size: 16.8px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+input[type="submit"]:hover {
+    background-color: #f27c4a65;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(222, 102, 49, 0.3);
+}
+
+input[type="submit"]:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
