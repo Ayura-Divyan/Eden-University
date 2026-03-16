@@ -14,10 +14,11 @@ document.addEventListener("DOMContentLoaded", loadCourses);
                     
                     let output = "";
 
-                    // Loop through all courses in the XML
+                    //Loop through all courses in the XML
                     for (let i = 0; i < courses.length; i++) {
                         const code = courses[i].getElementsByTagName("code")[0].textContent;
                         const title = courses[i].getElementsByTagName("title")[0].textContent;
+                        const department = courses[i].getElementsByTagName("department")[0].textContent;
                         const level = courses[i].getElementsByTagName("level")[0].textContent;
                         const description = courses[i].getElementsByTagName("description")[0].textContent;
                         const duration = courses[i].getElementsByTagName("duration")[0].textContent;
@@ -28,6 +29,7 @@ document.addEventListener("DOMContentLoaded", loadCourses);
                             output += `
                                 <div class="course-card">
                                     <h3>${title} (${code})</h3>
+                                    <p><strong>Department</strong> ${department}</p>
                                     <p><strong>Level:</strong> ${level}</p>
                                     <p><strong>Duration:</strong> ${duration}</p>
                                     <p><strong>Description:</strong> ${description}</p>
