@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<courses>
+    <course>
+        <code>CS100</code>
+        <title>Foundation in Digital Logic</title>
+        <department>Computer Science</department>
+        <level>Foundation</level>
+        <description>An introductory course covering the absolute basics of computational thinking, binary logic, and basic scripting.</description>
+        <duration>1 Year</duration>
+        <entry_requirements>High School Certificate</entry_requirements>
+    </course>
+    <course>
+        <code>CS201</code>
+        <title>BSc in Software Engineering</title>
+        <department>Computer Science</department>
+        <level>Undergraduate</level>
+        <description>Comprehensive study of advanced algorithms, data structures, and secure application development.</description>
+        <duration>3 Years</duration>
+        <entry_requirements>Foundation Degree in CS or equivalent</entry_requirements>
+    </course>
+    <course>
+        <code>CS505</code>
+        <title>MSc in Cybernetics &amp; Artificial Intelligence</title>
+        <department>Computer Science</department>
+        <level>Postgraduate</level>
+        <description>Research-focused program exploring machine learning models, predictive algorithms, and advanced cybersecurity.</description>
+        <duration>2 Years</duration>
+        <entry_requirements>Bachelor's Degree in Computer Science</entry_requirements>
+    </course>
+
+    <course>
+        <code>WS100</code>
+        <title>Foundation in Global Studies</title>
+        <department>WISE</department>
+        <level>Foundation</level>
+        <description>Introduction to world history, basic diplomacy, and the geopolitical landscape of Ostania and Westalis.</description>
+        <duration>1 Year</duration>
+        <entry_requirements>High School Certificate</entry_requirements>
+    </course>
+    <course>
+        <code>WS301</code>
+        <title>BA in Intelligence Analysis</title>
+        <department>WISE</department>
+        <level>Undergraduate</level>
+        <description>Master the art of information gathering, cryptography, and maintaining regional stability through covert observation.</description>
+        <duration>3 Years</duration>
+        <entry_requirements>Foundation in Global Studies</entry_requirements>
+    </course>
+    <course>
+        <code>WS600</code>
+        <title>MA in Psychological Operations</title>
+        <department>WISE</department>
+        <level>Postgraduate</level>
+        <description>High-clearance study of psychological warfare, deep-cover diplomacy, and advanced counterterrorism strategies.</description>
+        <duration>2 Years</duration>
+        <entry_requirements>Bachelor's Degree in Intelligence or related field</entry_requirements>
+    </course>
+
+    <course>
+        <code>FA100</code>
+        <title>Foundation in Classical Arts</title>
+        <department>Fine Arts</department>
+        <level>Foundation</level>
+        <description>A refined introduction to classical music theory, basic sketching, and the history of art.</description>
+        <duration>1 Year</duration>
+        <entry_requirements>High School Certificate</entry_requirements>
+    </course>
+    <course>
+        <code>FA205</code>
+        <title>BFA in Renaissance Art History</title>
+        <department>Fine Arts</department>
+        <level>Undergraduate</level>
+        <description>Deep dive into the aesthetics, techniques, and cultural impacts of historical masterpieces and sculptures.</description>
+        <duration>3 Years</duration>
+        <entry_requirements>Foundation in Classical Arts</entry_requirements>
+    </course>
+    <course>
+        <code>FA550</code>
+        <title>MFA in Artistic Diplomacy</title>
+        <department>Fine Arts</department>
+        <level>Postgraduate</level>
+        <description>An elite program combining fine arts curation with cultural diplomacy, ensuring the prestige of Eden Academy worldwide.</description>
+        <duration>2 Years</duration>
+        <entry_requirements>Bachelor's Degree in Fine Arts</entry_requirements>
+    </course>
+</courses>
