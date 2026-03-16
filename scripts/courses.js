@@ -1,10 +1,10 @@
-// Load courses initially when page loads
-        document.addEventListener("DOMContentLoaded", loadCourses);
+//Load courses when page loads
+document.addEventListener("DOMContentLoaded", loadCourses);
 
-        function loadCourses() {
-            const filterValue = document.getElementById("levelFilter").value;
+    function loadCourses() {
+        const filterValue = document.getElementById("levelFilter").value;
             
-            // Fetch the XML file
+            //Fetch the XML file
             fetch("courses.xml")
                 .then(response => response.text())
                 .then(data => {
@@ -23,7 +23,7 @@
                         const duration = courses[i].getElementsByTagName("duration")[0].textContent;
                         const requirements = courses[i].getElementsByTagName("entry_requirements")[0].textContent;
 
-                        // Check if it matches the filter (or if filter is 'All')
+                        //Check if it matches the filter
                         if (filterValue === "All" || filterValue === level) {
                             output += `
                                 <div class="course-card">
@@ -32,13 +32,12 @@
                                     <p><strong>Duration:</strong> ${duration}</p>
                                     <p><strong>Description:</strong> ${description}</p>
                                     <p><strong>Entry Requirements:</strong> ${requirements}</p>
-                                </div>
-                            `;
+                                </div>`;
                         }
                     }
 
-                    // Display the generated HTML
-                    document.getElementById("courseList").innerHTML = output || "<p>No courses found for this level.</p>";
-                })
-                .catch(error => console.error("Error loading XML:", error));
+                //Display the generated HTML
+                document.getElementById("courseList").innerHTML = output || "<p>No courses found for this level.</p>";
+            })
+            .catch(error => console.error("Error loading XML:", error));
         }
