@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/global.css">
+    <title>Courses</title>
+</head>
+<body>
+    <nav>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="assets/logo.png" alt="Eden University Logo" class="logo">
+            </a>
+            <p class="university-name">Eden University</p>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="departments.html" target="_blank">Departments</a></li>
+            <li><a href="course.html" target="_blank">Courses</a>
+            <li><a href="enquiry.html" target="_blank">Enquiry</a></li>
+            <li><a id="nav-about-us" href="index.html#department-cards">About Us</a></li>
+        </ul>
+        <div class="email-info">
+            <img src="assets/email.png" alt="Email Icon" class="email-icon">
+            <a href="mailto:info@eden.edu">info@eden.edu</a>
+        </div>
+    </nav>
+
+    <main>
+        <h1 style="text-align: center;">Our Courses</h1>
+        
+        <div class="filter-section">
+            <label for="levelFilter"><strong>Filter by Level:</strong></label>
+            <select id="levelFilter" onchange="loadCourses()">
+                <option value="All">All Levels</option>
+                <option value="Foundation">Foundation</option>
+                <option value="Undergraduate">Undergraduate</option>
+                <option value="Postgraduate">Postgraduate</option>
+            </select>
+        </div>
+
+        <div id="courseList"></div>
+    </main>
+    
+    <footer>
+        <div class="footer-top">
+            <a href="index.html">
+                <img src="assets/logo.png" alt="Eden University Logo" class="logo">
+            </a>
+            <p class="university-name">Eden <span class="university-highlight">University</span></p>
+            
+        </div>
+        <div class="contact-info">
+            <h1>Contact Us</h1>
+            <p>Email: <a href="mailto:info@eden.edu">info@eden.edu</a></p>
+            <p>Phone: +1 (555) 123-4567</p>
+            <p>Address: 56 Berlint, Ostania</p>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Eden University. All rights reserved.</p>
+            <privacy-policy><a href="privacy.html" target="_blank">Privacy Policy</a></privacy-policy>
+            <a href="accessibility.html" target="_blank">Accessibility</a>
+        </div>
+    </footer>
+</body>
+</html>
